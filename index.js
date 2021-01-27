@@ -22,8 +22,42 @@
 // }
 // obj.logName()
 
-const func  = (a = 20) => {
-    return a
+// const func  = (a = 20) => {
+//     return a
+// }
+//
+// console.log(func())
+
+
+// const name = 'max'
+// const age = 21
+//
+// const obj = {
+//     name,
+//     age
+// }
+// console.log(obj)
+
+
+const createPerson = (name, surname, fieldName, fieldPostfix) => {
+    fullname = name + ' ' + surname
+    return  {
+        fullname,
+        name,
+        surname,
+        getJob() {
+            return 'Front end'
+        },
+        [fieldName + fieldPostfix] : 100
+    };
+    // let finale = fieldName + fieldPostfix
+    // person[fieldName] = 50;
+    // return person;
 }
 
-console.log(func())
+person  = createPerson('john', 'sash', 'car', '-model')
+console.log(person)
+
+
+
+
