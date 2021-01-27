@@ -10,6 +10,6 @@
 /*!******************!*\
   !*** ./index.js ***!
   \******************/
-eval("// const original = function () {\n//     return 100;\n// }\n// console.log(original())\n// const arrow = (num) => {\n//     return 100+num;\n// }\n// const arrow2 = (num) =>  100 + num;\n// const arrow3 = num =>  100 + num;\n// console.log(arrow3(12))\nvar obj = {\n  name: 'qwe',\n  logName: function logName() {\n    var _this = this;\n\n    setTimeout(function () {\n      console.log('name + ' + _this.name);\n    }, 2000);\n  }\n};\nobj.logName();\n\n//# sourceURL=webpack://es6-theory-course/./index.js?");
+eval("// const original = function () {\n//     return 100;\n// }\n// console.log(original())\n// const arrow = (num) => {\n//     return 100+num;\n// }\n// const arrow2 = (num) =>  100 + num;\n// const arrow3 = num =>  100 + num;\n// console.log(arrow3(12))\n// const obj = {\n//     name: 'qwe',\n//     logName: function (){\n//         setTimeout( () => {\n//             console.log('name + '+ this.name)\n//         }, 2000)\n//\n//     }\n// }\n// obj.logName()\nvar func = function func() {\n  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 20;\n  return a;\n};\n\nconsole.log(func());\n\n//# sourceURL=webpack://es6-theory-course/./index.js?");
 /******/ })()
 ;
