@@ -39,24 +39,74 @@
 // console.log(obj)
 
 
-const createPerson = (name, surname, fieldName, fieldPostfix) => {
-    fullname = name + ' ' + surname
-    return  {
-        fullname,
-        name,
-        surname,
-        getJob() {
-            return 'Front end'
-        },
-        [fieldName + fieldPostfix] : 100
-    };
-    // let finale = fieldName + fieldPostfix
-    // person[fieldName] = 50;
-    // return person;
-}
+// const createPerson = (name, surname, fieldName, fieldPostfix) => {
+//     fullname = name + ' ' + surname
+//     return  {
+//         fullname,
+//         name,
+//         surname,
+//         getJob() {
+//             return 'Front end'
+//         },
+//         [fieldName + fieldPostfix] : 100
+//     };
+//     // let finale = fieldName + fieldPostfix
+//     // person[fieldName] = 50;
+//     // return person;
+// }
+//
+// person  = createPerson('john', 'sash', 'car', '-model')
+// console.log(person)
 
-person  = createPerson('john', 'sash', 'car', '-model')
-console.log(person)
+//---------------деструктиризация
+// let obj = {
+//     name: 'max',
+//     age: 21
+// }
+//
+// let {name: n, age: a} = obj
+// // let age = obj.age
+//
+// console.log(n, a)
+
+// let array = ['max', 30, ]
+// // let {0: name} = array
+// let [name, , color = 'red'] = array
+// console.log(name, color)
+
+//---------------rest/ spread операторы
+
+// function logStrings(num, ...args){ //rest(оставшиеся параметры в функцию)
+//     // var args = Array.prototype.slice.call(arguments)
+//     console.log(num, args)
+// }
+//
+// let spreadArray = ['max', 'max2', 'max3', 'max4']
+//
+// logStrings(20, ...spreadArray) //spread
+// logStrings(20, 'max', 'max2', 'max3', 'max4')
+
+
+//------------------строки
+
+let name = 'max'
+let str1 = `Hello ${name} glad to see u`
+console.log(str1)
+
+let html = `
+    <div>
+        <h1>Hello World</h1>
+        <span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sapiente!</p> //lorem10 tab
+        </span>
+    </div>
+`
+console.log(html)
+
+
+
+
+
 
 
 
