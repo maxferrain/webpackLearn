@@ -89,19 +89,96 @@
 
 //------------------строки
 
-let name = 'max'
-let str1 = `Hello ${name} glad to see u`
-console.log(str1)
+// let name = 'max'
+// let str1 = `Hello ${name} glad to see u`
+// console.log(str1)
+//
+// let html = `
+//     <div>
+//         <h1>Hello World</h1>
+//         <span>
+//             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sapiente!</p> //lorem10 tab
+//         </span>
+//     </div>
+// `
+// console.log(html)
 
-let html = `
-    <div>
-        <h1>Hello World</h1>
-        <span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sapiente!</p> //lorem10 tab
-        </span>
-    </div>
-`
-console.log(html)
+
+//-----------------------классы
+
+// class  Car{
+//     constructor(name) {
+//         this.name = name
+//     }
+//
+//     logName(){
+//         console.log(this.name)
+//     }
+//
+//     static staticFunc(){
+//         console.log('im static')
+//     }
+// }
+//
+// let car = new Car('BMW')
+// car.logName()
+// Car.staticFunc()
+
+// class  Car{
+//     constructor(name) {
+//         console.log('car constructor')
+//         this.name = name
+//     }
+//
+//     logName(){
+//         console.log('car name is ',this.name)
+//     }
+// }
+//
+// class BMW extends Car{
+//     constructor(name) {
+//         super(name);
+//         console.log('BMW constructor')
+//     }
+//
+//     logName() {
+//         super.logName();
+//         console.log('bmw name is ',this.name)
+//     }
+// }
+//
+// let bmw = new BMW('x7')
+// bmw.logName()
+
+
+//--------------------------обьекты Set/weak
+
+// let set = new Set([1,2,3,3,4,4,5,3]);
+// set.add(10)
+// set.add('hello')
+// set.add({})
+
+// let set = new Set().add(2).add(3)
+// console.log('set size ', set.size)
+// console.log('set has', set.has(2))
+
+
+let set = new WeakSet()
+
+let key = {}
+set.add(key)
+console.log(set.size)
+key = null
+console.log(set.size)
+
+
+
+
+
+
+
+
+
 
 
 
